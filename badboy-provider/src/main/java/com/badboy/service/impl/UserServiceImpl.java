@@ -4,7 +4,8 @@ import org.springframework.stereotype.Service;
 
 import com.badboy.service.UserService;
 
-@Service
+
+@Service ("userService")
 public class UserServiceImpl implements UserService{
 
 	@Override

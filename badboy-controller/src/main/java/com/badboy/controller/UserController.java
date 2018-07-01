@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.badboy.service.UserService;
 
-@Controller
-@RequestMapping("/userController")
+@Controller("userController")
+@RequestMapping("user")
 public class UserController {
 	@Autowired
 	UserService userService;
 	
 	@ResponseBody
-	@RequestMapping("/getName")
+	@RequestMapping("getName")
 	public String getName(String name) {
 		System.out.println("Got user name: " + name);
 		userService.getName(name);
